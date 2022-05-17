@@ -1,12 +1,11 @@
 if (navigator.serviceWorker) {
 	navigator.serviceWorker.register("/sw.js");
 }
-$(function() {
-    console.log("JQuery funcionado....");
-    
-    $('#linkPractica1').click(function(){
+$(document).ready(function(){
+	console.log("JQuery funcionando...");
+	$('#linkPractica1').click(function(){
         console.log("Presiono link Practica1");
-        location.href = "../Practica1/index.php";
+        location.href = "../Practica1/index.html";
     })
 
     $('#linkPractica2').click(function(){
@@ -16,7 +15,7 @@ $(function() {
 
     $('#linkPractica3').click(function(){
         console.log("Presiono link Practica3");
-        location.href = "../Practica3/index.php"
+		location.href = "../Practica3/index.html";
     })
 
     $.ajax({
